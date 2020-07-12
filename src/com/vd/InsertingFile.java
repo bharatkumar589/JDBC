@@ -38,7 +38,7 @@ public class InsertingFile {
 			int result=ps.executeUpdate();
 			
 			if(result ==0) {
-				System.out.println("File not inserted ...please chec ");
+				System.out.println("File not inserted ...please check ");
 			}else {
 				System.out.println("File inderted secessfully");
 			}
