@@ -12,15 +12,14 @@ public class BatchProcessingUsingPS {
 	public static final String username = "root";
 	public static final String password = "root";
 
-	public static final String sql1 = "insert into Bank_Account_tbl values(?,?,?)";
-	public static final String sql2 = "insert into Bank_Account_tbl values(?,?,?)";
-	public static final String sql3 = "update Bank_Account_tbl set accountHolderName=? where accountNo=?";
+	//public static final String sql1 = "insert into Bank_Account_tbl values(?,?,?)";
+	//public static final String sql2 = "insert into Bank_Account_tbl values(?,?,?)";
+	//public static final String sql3 = "update Bank_Account_tbl set accountHolderName=? where accountNo=?";
 
 	public static void main(String[] args) {
 
 		Connection con = null;
 		PreparedStatement ps= null;
-		boolean flag = false;
 
 		try {
 
@@ -29,6 +28,7 @@ public class BatchProcessingUsingPS {
 
 			// create connefction
 			con = DriverManager.getConnection(url, username, password);
+			
 			// Disable auto commit mode on DB
 			con.setAutoCommit(false);
 			
@@ -45,8 +45,8 @@ public class BatchProcessingUsingPS {
 			ps.setInt(3, 20000);
 			ps.addBatch();
 			
-		
-
+			
+			// executing the bath of queries
 			ps.executeBatch();
 			con.commit();
 			

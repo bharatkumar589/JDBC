@@ -20,14 +20,13 @@ public class BatchProcessingUsingST {
 
 		Connection con = null;
 		Statement st = null;
-		boolean flag = false;
 
 		try {
 
 			// load and register driver
 			Class.forName(driverClass);
 
-			// create connefction
+			// create connection
 			con = DriverManager.getConnection(url, username, password);
 
 			st = con.createStatement();
