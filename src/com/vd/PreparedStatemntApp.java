@@ -15,6 +15,7 @@ public class PreparedStatemntApp {
 
 	public static void main(String[] args) {
 
+		//Tetsting1
 		Connection con = null;
 		PreparedStatement ps = null;
 		
