@@ -44,6 +44,7 @@ public class BatchProcessingUsingPS {
 			ps.setString(2, "ramesh");
 			ps.setInt(3, 20000);
 			ps.addBatch();
+			// Batch is executed
 			
 			
 			// executing the bath of queries
