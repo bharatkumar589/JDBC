@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class BatchProcessingUsingPS {
+	// Batch Processing Updates
 
 	public static final String driverClass = "com.mysql.cj.jdbc.Driver";
 	public static final String url = "jdbc:mysql://localhost:3306/sys";
