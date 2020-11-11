@@ -13,6 +13,7 @@ public class BatchProcessingUsingPS {
 	public static final String username = "root";
 	public static final String password = "root";
 
+	// Adding 
 	//public static final String sql1 = "insert into Bank_Account_tbl values(?,?,?)";
 	//public static final String sql2 = "insert into Bank_Account_tbl values(?,?,?)";
 	//public static final String sql3 = "update Bank_Account_tbl set accountHolderName=? where accountNo=?";
