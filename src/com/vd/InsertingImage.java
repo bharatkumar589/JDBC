@@ -9,6 +9,7 @@ import java.sql.SQLException;
 
 public class InsertingImage {
 
+	//Variables
 	
 	public static final String driverClass = "com.mysql.cj.jdbc.Driver";
 	public static final String url = "jdbc:mysql://localhost:3306/sys";
