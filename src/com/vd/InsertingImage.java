@@ -23,6 +23,8 @@ public class InsertingImage {
 		PreparedStatement ps = null;
 		
 		try {
+			//Added
+			
 			// Load and Register the driver
 			Class.forName(driverClass);
 			// Establishing the connection
