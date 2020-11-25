@@ -36,6 +36,7 @@ public class PreparedStatemntApp {
 			Class.forName(driverClass);
 			// Esstablishing the connection
 			con = DriverManager.getConnection(url, username, password);
+			
 
 			// create prepared statement object
 			ps = con.prepareStatement("insert into emp values(?,?,?)");
