@@ -8,6 +8,7 @@ import java.sql.SQLException;
 public class BatchProcessingUsingPS {
 	// Batch Processing Updates
 
+	// Added for password Check
 	public static final String driverClass = "com.mysql.cj.jdbc.Driver";
 	public static final String url = "jdbc:mysql://localhost:3306/sys";
 	public static final String username = "root";
