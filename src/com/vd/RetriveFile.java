@@ -50,6 +50,8 @@ public class RetriveFile {
 				int i;
 				while ((i = reader.read()) != -1) {
 					fw.write(i);
+					
+					//dd
 				}
 				fw.close();
 				System.out.println("File Retrived successfully");
