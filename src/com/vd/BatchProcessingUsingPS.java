@@ -23,6 +23,8 @@ public class BatchProcessingUsingPS {
 	//public static final String sql3 = "update Bank_Account_tbl set accountHolderName=? where accountNo=?";
 
 	public static void main(String[] args) {
+		
+		
 
 		Connection con = null;
 		PreparedStatement ps= null;
