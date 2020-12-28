@@ -28,6 +28,7 @@ public class BatchProcessingUsingPS {
 		PreparedStatement ps= null;
 
 		try {
+			
 
 			// load and register driver
 			Class.forName(driverClass);
