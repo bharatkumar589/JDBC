@@ -36,13 +36,15 @@ public class InsertingImage {
 			
 			FileInputStream fis=new FileInputStream(file);
 			
+			
+			
 			ps=con.prepareStatement("insert into image_tbl (name,image) values(?,?)"); 
 			ps.setString(1,"image-1");
 			ps.setBinaryStream(2,fis,(int)file.length());
 			int result=ps.executeUpdate();
 			
 			if(result ==0) {
-				System.out.println("Image not inserted ...please chec ");
+				System.out.println("Image not inserted ...please check ");
 			}else {
 				System.out.println("Image inderted secessfully");
 			}

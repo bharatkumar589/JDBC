@@ -50,7 +50,7 @@ public class BatchProcessingUsingPS {
 			ps.addBatch();
 			
 			ps.setInt(1, 11112);
-			ps.setString(2, "ramesh");
+			ps.setString(2, "rameshss");
 			ps.setInt(3, 20000);
 			ps.addBatch();
 			// Batch is executed
