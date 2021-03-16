@@ -29,7 +29,7 @@ public class SqlInjection {
 		System.out.println("Please Enter Password::");
 		String pswd=sc.next();
 		
-
+		// try block
 		try {
 			// Load and Register the driver
 			Class.forName(driverClass);
