@@ -28,6 +28,7 @@ public class RetriveFile {
 		Reader reader = null;
 		FileWriter fw = null;
 
+		// try block
 		try {
 			// Load and Register the driver
 			Class.forName(driverClass);
