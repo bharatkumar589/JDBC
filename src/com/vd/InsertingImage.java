@@ -9,6 +9,7 @@ import java.sql.SQLException;
 
 public class InsertingImage {
 
+	//Variables
 	
 	public static final String driverClass = "com.mysql.cj.jdbc.Driver";
 	public static final String url = "jdbc:mysql://localhost:3306/sys";
@@ -22,6 +23,8 @@ public class InsertingImage {
 		PreparedStatement ps = null;
 		
 		try {
+			//Added
+			
 			// Load and Register the driver
 			Class.forName(driverClass);
 			// Establishing the connection
@@ -33,13 +36,15 @@ public class InsertingImage {
 			
 			FileInputStream fis=new FileInputStream(file);
 			
+			
+			
 			ps=con.prepareStatement("insert into image_tbl (name,image) values(?,?)"); 
 			ps.setString(1,"image-1");
 			ps.setBinaryStream(2,fis,(int)file.length());
 			int result=ps.executeUpdate();
 			
 			if(result ==0) {
-				System.out.println("Image not inserted ...please chec ");
+				System.out.println("Image not inserted ...please check ");
 			}else {
 				System.out.println("Image inderted secessfully");
 			}
@@ -53,6 +58,8 @@ public class InsertingImage {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
+			
+			//end
 
 		}
 
