@@ -15,6 +15,7 @@ public class SqlInjection {
 	public static final String password="root";
 	public static final String sql="";
 	
+	//
 	public static void main(String[] args) {
 
 		Connection con = null;
