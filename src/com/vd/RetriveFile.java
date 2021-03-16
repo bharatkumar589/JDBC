@@ -27,6 +27,8 @@ public class RetriveFile {
 		Clob clob = null;
 		Reader reader = null;
 		FileWriter fw = null;
+		
+		// Adding try block
 
 		try {
 			// Load and Register the driver
