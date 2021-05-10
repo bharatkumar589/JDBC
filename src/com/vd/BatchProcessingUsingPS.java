@@ -48,7 +48,7 @@ public class BatchProcessingUsingPS {
 			ps.setString(2, "bharat");
 			ps.setInt(3, 10000);
 			ps.addBatch();
-			
+			Hi
 			ps.setInt(1, 11112);
 			ps.setString(2, "rameshss");
 			ps.setInt(3, 20000);
