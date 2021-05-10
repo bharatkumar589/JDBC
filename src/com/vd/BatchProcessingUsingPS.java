@@ -60,7 +60,7 @@ public class BatchProcessingUsingPS {
 			ps.executeBatch();
 			con.commit();
 			
-		
+		.///
 		} catch (Exception e) {
 			System.out.println("please check the above steps" + e.getMessage());
 		} finally {
