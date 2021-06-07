@@ -39,6 +39,7 @@ public class SqlInjection {
 
 			// Create statement Object
 			st = con.createStatement();
+			// Hekooo
 
 			// Send and execute the queries
 			rs= st.executeQuery("select * from Login_tbl where uname="+uname+" and pswd ="+pswd);
